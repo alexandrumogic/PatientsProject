@@ -1,0 +1,10 @@
+<div *ngIf="patient" class="container" style="padding-top: 40px;">
+  <div class="panel panel-info">
+  <p>Firstname: {{patient.firstname}}</p>
+  <p>Lastname: {{patient.lastname}}</p>
+  <p>Age: {{patient.age}}</p>
+  <p>Phone: {{patient.phone}}</p>
+  <br>
+  <td><button (click)="goBack()" type="button" class="btn btn-warning">Back</button></td>
+  </div>
+</div>

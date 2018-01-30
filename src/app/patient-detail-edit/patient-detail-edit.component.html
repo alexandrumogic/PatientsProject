@@ -1,0 +1,22 @@
+<div class="container" style="padding-top: 40px;">
+  <form #myForm="ngForm" *ngIf="patient">
+    <div class="form-group">
+      <label for="Firstname">Firstname</label>
+      <input type="text" class="form-control" id="Firstname" placeholder="{{patient.firstname}}">
+    </div>
+    <div class="form-group">
+      <label for="Lastname">Lastname</label>
+      <input type="text" class="form-control" id="Lastname" placeholder="{{patient.lastname}}">
+    </div>
+    <div class="form-group">
+      <label for="Age">Age</label>
+      <input type="text" class="form-control" id="Age" placeholder="{{patient.age}}">
+    </div>
+    <div class="form-group">
+      <label for="Phone">Phone</label>
+      <input type="text" class="form-control" id="Phone" placeholder="{{patient.phone}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Update patient</button>
+    <button (click)="goBack()" type="button" class="btn btn-warning">Back</button>
+  </form>
+</div>
